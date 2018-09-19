@@ -337,7 +337,7 @@ int main(int num_args, char * args[]) {
             }
                
             sum = valors[0];
-            for (i=1;i<N;i++) {
+            for (i=1; (i < N); i++) {
                assert(valors[i-1] <= valors[i]);
                if ((i % 100) == 0) sum += valors[i];
             }
